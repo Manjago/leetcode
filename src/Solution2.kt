@@ -1,8 +1,7 @@
-package `add-two-numbers`
-
 import java.math.BigInteger
 
-class Solution {
+// https://leetcode.com/problems/add-two-numbers/
+class Solution2 {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
 
         if (l1 == null || l2 == null) {

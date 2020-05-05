@@ -1,6 +1,5 @@
-package `two-sum`
-
-class Solution {
+// https://leetcode.com/problems/two-sum/
+class Solution1 {
 
     fun twoSum(nums: IntArray, target: Int): IntArray {
 
