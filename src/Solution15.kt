@@ -1,13 +1,13 @@
 import kotlin.test.assertEquals
 
 fun main() {
-    val sol = Solution776()
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(1, 2, 3))
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(1, 3, 2))
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(2, 3, 1))
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(2, 1, 3))
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(3, 1, 2))
-    assertEquals(Solution776.Triplet(1, 2, 3), sol.sortedTriplet(3, 2, 1))
+    val sol = Solution15()
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(1, 2, 3))
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(1, 3, 2))
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(2, 3, 1))
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(2, 1, 3))
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(3, 1, 2))
+    assertEquals(Solution15.Triplet(1, 2, 3), sol.sortedTriplet(3, 2, 1))
 
     val result = sol.threeSum(intArrayOf(-1, 0, 1, 2, -1, -4))
     assertEquals("[[-1, -1, 2], [-1, 0, 1]]", result.toString())
@@ -16,7 +16,8 @@ fun main() {
 
 }
 
-class Solution776 {
+// https://leetcode.com/problems/3sum/
+class Solution15 {
 
     fun threeSum(nums: IntArray): List<List<Int>> {
 

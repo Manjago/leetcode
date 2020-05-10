@@ -1,7 +1,7 @@
 import kotlin.test.assertEquals
 
 fun main() {
-    val solution = Solution778()
+    val solution = Solution49()
 
     assertEquals("aet", solution.sortString("eat"))
     assertEquals("aet", solution.sortString("tea"))
@@ -11,7 +11,8 @@ fun main() {
     assertEquals("[[eat, tea, ate], [tan, nat], [bat]]", result.toString())
 }
 
-class Solution778 {
+//https://leetcode.com/problems/group-anagrams/
+class Solution49 {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
         val preResult: MutableMap<String, MutableList<String>> = mutableMapOf()
         for(string in strs) {

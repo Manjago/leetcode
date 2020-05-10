@@ -3,9 +3,6 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.test.assertEquals
 
-
-// https://leetcode.com/problems/median-of-two-sorted-arrays/
-
 fun main() {
     val s = Solution4()
     assertEquals(7.0, s.findMedianSortedArrays(intArrayOf(1, 3, 5, 7, 9, 11),
@@ -38,6 +35,7 @@ fun main() {
             8, 9, 10, 11, 12, 100)))
 }
 
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
 class Solution4 {
 
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {

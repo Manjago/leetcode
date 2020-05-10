@@ -1,14 +1,14 @@
 import kotlin.test.assertEquals
 
 fun main() {
-    val solution = Solution779()
+    val solution = Solution3a()
     assertEquals(3, solution.lengthOfLongestSubstring("abcabcbb"))
     assertEquals(1, solution.lengthOfLongestSubstring("bbbbb"))
     assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"))
 }
 
-
-class Solution779 {
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+class Solution3a {
     fun lengthOfLongestSubstring(s: String): Int {
 
         class Item(

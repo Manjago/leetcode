@@ -15,8 +15,6 @@ after dozero2
 [0, 0, 0]
  */
 
-// https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/777/
-
 fun main() {
     test(
         arrayOf(
@@ -47,7 +45,7 @@ fun main() {
 }
 
 fun test(matrix: Array<IntArray>, result: String) {
-    Solution777().setZeroes(matrix)
+    Solution73().setZeroes(matrix)
     assertEquals(result.trimIndent(), matrix.dump())
 }
 
@@ -63,7 +61,8 @@ fun Array<IntArray>.dump(): String {
     return sb.toString()
 }
 
-class Solution777 {
+// https://leetcode.com/problems/set-matrix-zeroes/
+class Solution73 {
     fun setZeroes(matrix: Array<IntArray>): Unit {
 
         //mark
