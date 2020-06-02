@@ -31,3 +31,9 @@ fun IntArray?.toListNode(): ListNode? {
     return top
 }
 
+fun ListNode?.findByVal(toFind: Int): ListNode? = when {
+    this == null -> null
+    this.`val` == toFind -> this
+    else -> this.next.findByVal(toFind)
+}
+
