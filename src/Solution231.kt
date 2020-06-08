@@ -1,3 +1,4 @@
+import java.util.concurrent.ConcurrentHashMap
 import kotlin.math.pow
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
@@ -25,6 +26,19 @@ class Solution231 {
 
     private val double2 = 2.toDouble()
 
+    private val cache = ConcurrentHashMap<Int, Int>()
+
+    private fun cachedPow(a: Int) : Int {
+        val pretender = cache[a]
+        return if (pretender != null) {
+            pretender
+        } else {
+            val result = double2.pow(a).toInt()
+            cache[a] = result
+            result
+        }
+    }
+
     fun isPowerOfTwo(n: Int): Boolean {
 
         if (n <= 0) {
@@ -38,7 +52,7 @@ class Solution231 {
 
         for (probe in 1..limit) {
 
-            if (double2.pow(probe).toInt() == n) {
+            if (cachedPow(probe) == n) {
                 return true
             }
         }
