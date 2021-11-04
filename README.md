@@ -1,2 +1,2 @@
 # leetcode
-My leetcode solutions (Kotlin) (https://leetcode.com/)
+My leetcode solutions (Kotlin, Java) (https://leetcode.com/)
